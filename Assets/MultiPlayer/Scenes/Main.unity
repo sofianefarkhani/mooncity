@@ -13667,6 +13667,16 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4353792607939695984, guid: ef892e510514bf541a0646e18a8d10bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c38ceefc037e01d4fb394c63675fa6b6, type: 2}
+    - target: {fileID: 6413136885525399410, guid: ef892e510514bf541a0646e18a8d10bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9096c6f98cfb544f8d8ddfc694b775a, type: 2}
     - target: {fileID: 8012746339965529671, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: m_Height
@@ -13677,6 +13687,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8049835146995117803, guid: ef892e510514bf541a0646e18a8d10bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a92aa8f32d62c1448f3dce8e964fef2, type: 2}
     - target: {fileID: 8093428887508842194, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: m_Name
