@@ -1,0 +1,3072 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4976557495306290639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4976557495306290638}
+  m_Layer: 0
+  m_Name: Panneaux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4976557495306290638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976557495306290639}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.615326, y: 10.345919, z: 128.00156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 30113846526230113}
+  - {fileID: 30113847350734879}
+  - {fileID: 30113846341142077}
+  - {fileID: 30113846580004804}
+  - {fileID: 30113846937411082}
+  - {fileID: 30113846411480337}
+  - {fileID: 30113846794877204}
+  - {fileID: 30113845656784869}
+  - {fileID: 30113846811251999}
+  - {fileID: 30113845693105169}
+  - {fileID: 30113845785547364}
+  - {fileID: 30113846721891803}
+  - {fileID: 30113845805782903}
+  - {fileID: 30113845471458076}
+  - {fileID: 30113846775166204}
+  - {fileID: 30113847091977956}
+  - {fileID: 30113847032689654}
+  - {fileID: 30113847028214068}
+  - {fileID: 30113847269227038}
+  - {fileID: 30113846220292313}
+  - {fileID: 30113846737857088}
+  - {fileID: 30113846793657602}
+  - {fileID: 30113847120560383}
+  - {fileID: 30113846780128873}
+  - {fileID: 30113846087985303}
+  - {fileID: 30113847499163833}
+  - {fileID: 30113846930199082}
+  - {fileID: 30113845690606127}
+  - {fileID: 30113846458304989}
+  - {fileID: 30113847053852373}
+  - {fileID: 30113845439267186}
+  - {fileID: 30113845990936427}
+  - {fileID: 30113847305953422}
+  - {fileID: 30113847453022301}
+  - {fileID: 30113846357882903}
+  - {fileID: 30113846948330821}
+  - {fileID: 30113846707541107}
+  - {fileID: 30113845835294004}
+  - {fileID: 30113845419250354}
+  - {fileID: 30113845832983399}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4976557494006495656
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -77.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845419250354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494006495656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494058035816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845439267186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494058035816}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494093223942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845471458076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494093223942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494242911487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.73533
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69.94156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845656784869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494242911487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494276720949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.765327
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -83.94156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845690606127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494276720949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494278188811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69.921555
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845693105169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494278188811}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494387603838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845785547364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494387603838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494402517117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845832983399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494402517117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494404697646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.48155
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845835294004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494404697646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494425533549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.48155
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845805782903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494425533549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494576211057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -77.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113845990936427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494576211057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494693036941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -83.921555
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846087985303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494693036941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494824446915
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -86.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846220292313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494824446915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494909644071
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846341142077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494909644071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557494959788813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.73533
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.50156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846357882903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557494959788813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495032276491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846411480337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495032276491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495061209799
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846458304989 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495061209799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495114634619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846526230113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495114634619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495198772446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846580004804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495198772446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495277027177
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -77.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846707541107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495277027177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495309353306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.625324
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -86.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846737857088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495309353306}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495325845185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846721891803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495325845185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495343587302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.765327
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.50156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846775166204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495343587302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495383151118
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.765327
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69.94156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846794877204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495383151118}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495396693528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -86.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846793657602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495396693528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495402087795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846780128873 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495402087795}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495433100805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -65.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846811251999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495433100805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495509054736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -69.921555
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846937411082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495509054736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495515478320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.73533
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -83.94156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846930199082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495515478320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495569176159
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50.765327
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.50156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113846948330821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495569176159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495619000556
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847032689654 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495619000556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495632151086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.48155
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847028214068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495632151086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495673599439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.246964
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -83.921555
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847053852373 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495673599439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495693964798
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.73533
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.50156
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847091977956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495693964798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495740312549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -86.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847120560383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495740312549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495856451844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847269227038 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495856451844}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495891020692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -81.48155
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847305953422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495891020692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557495971519237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -52.216965
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.302956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847350734879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557495971519237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557496074785607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -77.152954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847453022301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557496074785607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4976557496087585699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4976557495306290638}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.595325
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.841314
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -79.59296
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 66a49fcee5c63f442b567eb265a75c31,
+        type: 3}
+      propertyPath: m_Name
+      value: Panneau Solaire (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66a49fcee5c63f442b567eb265a75c31, type: 3}
+--- !u!4 &30113847499163833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 66a49fcee5c63f442b567eb265a75c31,
+    type: 3}
+  m_PrefabInstance: {fileID: 4976557496087585699}
+  m_PrefabAsset: {fileID: 0}
