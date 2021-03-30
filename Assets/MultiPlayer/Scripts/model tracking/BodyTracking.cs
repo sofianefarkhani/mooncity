@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BodyTracking : MonoBehaviourPun
 {
-    public float DefaultHeight;// = 1.62 is the normal height of a human;
+    private static float DefaultHeight =1.6f;// = 1.62 is the normal height of a human;
     public float rotationWhenCrouched;
 
     public GameObject Head;//these keep track of our body objects.
