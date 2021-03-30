@@ -6,21 +6,19 @@ using UnityEngine.Serialization;
 
 public class rocketlaunch : MonoBehaviour
 {
-    public float dist;
+    public float dist=6000;
     public ParticleSystem ps1;
     public ParticleSystem ps2;
     public Light l;
-    public float speedMax=6000;
+    public float speedMax=1000;
     public bool triggerLaunch=false;
     private const float Gamma = 0.4f;
     private float _speed = 0;
-    private Vector3 _defaultPos;
     // Start is called before the first frame update
     void Start()
     {
        
         //GameObject rocket = new GameObject();
-        _defaultPos = transform.position;
         print("Fusée : "+gameObject);
 
     }
