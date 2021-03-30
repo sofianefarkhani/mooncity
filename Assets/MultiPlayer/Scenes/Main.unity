@@ -213,6 +213,16 @@ PrefabInstance:
       propertyPath: dist
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 6810627390825379350, guid: 1ba8f3b543199d142bf4d4174dbcb806,
+        type: 3}
+      propertyPath: launchOnStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810627390825379350, guid: 1ba8f3b543199d142bf4d4174dbcb806,
+        type: 3}
+      propertyPath: triggerLaunch
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7923343692107586510, guid: 1ba8f3b543199d142bf4d4174dbcb806,
         type: 3}
       propertyPath: m_Name
