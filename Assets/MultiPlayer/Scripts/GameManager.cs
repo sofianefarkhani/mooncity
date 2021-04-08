@@ -120,6 +120,12 @@ public class GameManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel("Main");
     }
 
+    [PunRPC]
+    public void ChangeSceneSousScene()
+    {
+        PhotonNetwork.LoadLevel("TestSousSol");
+    }
+
 
     #endregion
 }
