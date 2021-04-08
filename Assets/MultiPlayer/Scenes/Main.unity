@@ -15076,7 +15076,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 118
   m_CollisionDetection: 0
 --- !u!114 &5785793180280002720
 MonoBehaviour:
@@ -15085,12 +15085,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5785793180280002717}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c975cb8e804ed146a2038ae09ac1c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressLength: 0.03
+  pressLength: 0.01
   pressed: 0
   downEvent:
     m_PersistentCalls:

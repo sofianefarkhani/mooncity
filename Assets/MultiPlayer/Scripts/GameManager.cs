@@ -123,6 +123,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     [PunRPC]
     public void ChangeSceneSousScene()
     {
+        
+        Debug.Log("Loading TestSousSol Scene's");
         PhotonNetwork.LoadLevel("TestSousSol");
     }
 
