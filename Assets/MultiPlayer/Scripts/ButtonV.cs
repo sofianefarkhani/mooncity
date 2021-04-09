@@ -8,9 +8,9 @@ public class ButtonV : MonoBehaviourPun
     public class ButtonEvent : UnityEvent { }
 
     public float pressLength;
-    public bool pressed;
+    public bool triggerPress;
     public ButtonEvent downEvent;
-
+    private bool pressed;
     Vector3 startPos;
     Rigidbody rb;
 
@@ -24,11 +24,15 @@ public class ButtonV : MonoBehaviourPun
     {
         // If our distance is greater than what we specified as a press
         // set it to our max distance and register a press if we haven't already
-        float distance = Mathf.Abs(transform.position.y - startPos.y);
+        var position = transform.position;
+        float distance = Mathf.Abs(position.y - startPos.y);
+        if(triggerPress) this.photonView.RPC("Click",RpcTarget.All);
         if (distance >= pressLength)
         {
             // Prevent the button from going past the pressLength
-            transform.position = new Vector3(transform.position.x, startPos.y - pressLength, transform.position.z);
+
+            position = new Vector3(position.x, startPos.y - pressLength, position.z);
+            transform.position = position;
             if (!pressed)
             {
 
@@ -42,15 +46,17 @@ public class ButtonV : MonoBehaviourPun
             pressed = false;
         }
         // Prevent button from springing back up past its original position
-        if (transform.position.y > startPos.y)
+        if (position.y > startPos.y)
         {
-            transform.position = new Vector3(transform.position.x, startPos.y, transform.position.z);
+            position = new Vector3(position.x, startPos.y, position.z);
+            transform.position = position;
         }
     }
 
     [PunRPC]
     public void Click()
     {
+        triggerPress = false;
         pressed = true;
         // If we have an event, invoke it
         downEvent?.Invoke();
