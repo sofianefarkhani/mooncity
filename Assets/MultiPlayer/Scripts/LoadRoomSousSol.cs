@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine;
 
-public class Launcher : MonoBehaviourPunCallbacks
+public class LoadRoomSousSol : MonoBehaviourPunCallbacks
 {
     #region Private Serializable Fields
 
@@ -15,17 +15,8 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField]
     private byte maxPlayersPerRoom = 4;
 
-    [Tooltip("The Ui Panel to let the user enter name, connect and play")]
-    [SerializeField]
-    private GameObject controlPanel;
-
-    [Tooltip("The UI Label to inform the user that the connection is in progress")]
-    [SerializeField]
-    private GameObject progressLabel;
-
     #endregion
-
-
+    
     #region Private Fields
 
 
@@ -33,7 +24,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     /// This client's version number. Users are separated from each other by gameVersion (which allows you to make breaking changes).
     /// </summary>
     string gameVersion = "1";
-
+    string nameRoom="SousSol";
     /// <summary>
     /// Keep track of the current process. Since connection is asynchronous and is based on several callbacks from Photon,
     /// we need to keep track of this to properly adjust the behavior when we receive call back by Photon.
@@ -41,37 +32,24 @@ public class Launcher : MonoBehaviourPunCallbacks
     /// </summary>
     bool isConnecting;
 
-    private string nameRoom = "Main";
 
     #endregion
-
-
+    
     #region MonoBehaviour CallBacks
-
-
-    /// <summary>
-    /// MonoBehaviour method called on GameObject by Unity during early initialization phase.
-    /// </summary>
-    void Awake()
-    {
-        // #Critical
-        // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
-        PhotonNetwork.AutomaticallySyncScene = false;
-    }
-
-
-    /// <summary>
-    /// MonoBehaviour method called on GameObject by Unity during initialization phase.
-    /// </summary>
+    // Start is called before the first frame update
     void Start()
     {
-        progressLabel.SetActive(false);
-        controlPanel.SetActive(true);
+        
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    
 
     #endregion
-
 
     #region Public Methods
 
@@ -83,10 +61,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     /// </summary>
     public void Connect()
     {
-
-        progressLabel.SetActive(true);
-        controlPanel.SetActive(false);
-
         // we check if we are connected or not, we join if we are , else we initiate the connection to the server.
         if (PhotonNetwork.IsConnected)
         {
@@ -125,9 +99,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnDisconnected(DisconnectCause cause)
     {
         isConnecting = false;
-        progressLabel.SetActive(false);
-        controlPanel.SetActive(true);
-
+        
         Debug.LogWarningFormat("PUN Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
     }
 
@@ -146,20 +118,22 @@ public class Launcher : MonoBehaviourPunCallbacks
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
-            Debug.Log("We load the 'Main' room");
+            Debug.Log("We load the 'TestSouSol' room");
 
 
             // #Critical
             // Load the Room Level.
-            PhotonNetwork.LoadLevel("Main");
+            PhotonNetwork.LoadLevel("TestSousSol");
         }
             
             
     }
 
+    public override void OnLeftLobby()
+    {
+        
+    }
 
     #endregion
-
-
 
 }
