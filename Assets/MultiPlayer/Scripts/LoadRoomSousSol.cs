@@ -23,14 +23,14 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
     /// <summary>
     /// This client's version number. Users are separated from each other by gameVersion (which allows you to make breaking changes).
     /// </summary>
-    string gameVersion = "1";
-    string nameRoom="SousSol";
+    private string gameVersion = "1";
+    private const string NameRoom="SousSol";
     /// <summary>
     /// Keep track of the current process. Since connection is asynchronous and is based on several callbacks from Photon,
     /// we need to keep track of this to properly adjust the behavior when we receive call back by Photon.
     /// Typically this is used for the OnConnectedToMaster() callback.
     /// </summary>
-    bool isConnecting;
+    private bool _isConnecting;
 
 
     #endregion
@@ -61,18 +61,10 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
     /// </summary>
     public void Connect()
     {
-        // we check if we are connected or not, we join if we are , else we initiate the connection to the server.
-        if (PhotonNetwork.IsConnected)
-        {
-            // #Critical we need at this point to attempt joining a Random Room. If it fails, we'll get notified in OnJoinRandomFailed() and we'll create one.
-            PhotonNetwork.JoinRoom(nameRoom);
-        }
-        else
-        {
-            // keep track of the will to join a room, because when we come back from the game we will get a callback that we are connected, so we need to know what to do then
-            isConnecting = PhotonNetwork.ConnectUsingSettings();
-            PhotonNetwork.GameVersion = gameVersion;
-        }
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.Disconnect();
+        _isConnecting=PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.GameVersion = gameVersion;
     }
 
 
@@ -88,17 +80,17 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
         // we don't want to do anything if we are not attempting to join a room.
         // this case where isConnecting is false is typically when you lost or quit the game, when this level is loaded, OnConnectedToMaster will be called, in that case
         // we don't want to do anything.
-        if (isConnecting)
+        if (_isConnecting)
         {
             // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-            PhotonNetwork.JoinRoom(nameRoom);
-            isConnecting = false;
+            PhotonNetwork.JoinRoom(NameRoom);
+            _isConnecting = false;
         }
     }
 
     public override void OnDisconnected(DisconnectCause cause)
     {
-        isConnecting = false;
+        _isConnecting = false;
         
         Debug.LogWarningFormat("PUN Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
     }
@@ -108,7 +100,7 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-        PhotonNetwork.CreateRoom(nameRoom, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
+        PhotonNetwork.CreateRoom(NameRoom, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
     }
 
     public override void OnJoinedRoom()
@@ -128,11 +120,7 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
             
             
     }
-
-    public override void OnLeftLobby()
-    {
-        
-    }
+    
 
     #endregion
 
