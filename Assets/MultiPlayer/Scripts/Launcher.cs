@@ -56,7 +56,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         // #Critical
         // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
-        PhotonNetwork.AutomaticallySyncScene = false;
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
 
@@ -128,7 +128,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         progressLabel.SetActive(false);
         controlPanel.SetActive(true);
 
-        Debug.LogWarningFormat("PUN Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
+        Debug.LogWarningFormat("PUN 1 Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
