@@ -4,7 +4,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine;
 
-public class LoadRoomSousSol : MonoBehaviourPunCallbacks
+public class SwitchingRoom : MonoBehaviourPunCallbacks
 {
     #region Private Serializable Fields
 
@@ -14,17 +14,18 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
     [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]
     [SerializeField]
     private byte maxPlayersPerRoom = 4;
-
+    [Tooltip("The name of the room to go, can be a new one or an existing one")]
+    [SerializeField]
+    private string nameRoom;
+    
+    [Tooltip("The name of the scene to load in the next room.")] [SerializeField]
+    private string nameRoomScene;
     #endregion
     
     #region Private Fields
 
-
-    /// <summary>
-    /// This client's version number. Users are separated from each other by gameVersion (which allows you to make breaking changes).
-    /// </summary>
-    private string gameVersion = "1";
-    private const string NameRoom="SousSol";
+    
+    
     /// <summary>
     /// Keep track of the current process. Since connection is asynchronous and is based on several callbacks from Photon,
     /// we need to keep track of this to properly adjust the behavior when we receive call back by Photon.
@@ -55,16 +56,14 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
 
 
     /// <summary>
-    /// Start the connection process.
-    /// - If already connected, we attempt joining a random room
-    /// - if not yet connected, Connect this application instance to Photon Cloud Network
+    /// The idea here, it's when you leave a room, you indicate to photon that you still want to connect to a room.
+    /// So what when the player get back to the Master Server, it will connecting him to the other room by the room's name.
     /// </summary>
-    public void Connect()
+    public void SwitchRoom()
     {
-        PhotonNetwork.LeaveRoom();
-        PhotonNetwork.Disconnect();
-        _isConnecting=PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.GameVersion = gameVersion;
+        
+        _isConnecting=PhotonNetwork.LeaveRoom();
+
     }
 
 
@@ -83,7 +82,7 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
         if (_isConnecting)
         {
             // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-            PhotonNetwork.JoinRoom(NameRoom);
+            PhotonNetwork.JoinRoom(nameRoom);
             _isConnecting = false;
         }
     }
@@ -100,7 +99,7 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-        PhotonNetwork.CreateRoom(NameRoom, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
+        PhotonNetwork.CreateRoom(nameRoom, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
     }
 
     public override void OnJoinedRoom()
@@ -110,12 +109,12 @@ public class LoadRoomSousSol : MonoBehaviourPunCallbacks
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
         if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
         {
-            Debug.Log("We load the 'TestSouSol' room");
+            Debug.Log("We load the "+nameRoom+" room");
 
 
             // #Critical
             // Load the Room Level.
-            PhotonNetwork.LoadLevel("TestSousSol");
+            PhotonNetwork.LoadLevel(nameRoomScene);
         }
             
             

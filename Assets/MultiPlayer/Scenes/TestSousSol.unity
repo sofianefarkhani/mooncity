@@ -321,17 +321,16 @@ PrefabInstance:
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4869107332578019387, guid: a78ccea25d522634a836d2fc8dc94046,
-        type: 3}
+      objectReference: {fileID: 1749722736}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: SwitchRoom
       objectReference: {fileID: 0}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameManager, Assembly-CSharp
+      value: LoadRoomSousSol, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2845191873816905196, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
@@ -489,3 +488,24 @@ PrefabInstance:
       objectReference: {fileID: 291990264}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a78ccea25d522634a836d2fc8dc94046, type: 3}
+--- !u!1 &1749722735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1162779164503003990, guid: a78ccea25d522634a836d2fc8dc94046,
+    type: 3}
+  m_PrefabInstance: {fileID: 1749722734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1749722736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749722735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a068b185620448743973aab6fb1de364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayersPerRoom: 4
+  nameRoom: Main
+  nameRoomScene: Main

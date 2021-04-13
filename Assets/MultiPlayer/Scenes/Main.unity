@@ -1269,6 +1269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPlayersPerRoom: 4
+  nameRoom: SousSol
+  nameRoomScene: TestSousSol
 --- !u!1 &640640734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7695280020871906411, guid: ecb845d2584f3a6488e2ffccd16a1e9c,
@@ -2458,7 +2460,7 @@ PrefabInstance:
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Connect
+      value: SwitchRoom
       objectReference: {fileID: 0}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
