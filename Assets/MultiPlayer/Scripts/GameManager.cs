@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [Tooltip("The prefab to use for representing the player")]
     public GameObject playerPrefab;
-
+    [Tooltip("The prefab to indicate the location of the spawn point")]
     public GameObject spawn;
 
     #endregion
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             Debug.LogFormat("OnPlayerEnteredRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-            LoadArena();
+            //LoadArena();
         }
     }
 
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-            LoadArena();
+            //LoadArena();
         }
     }
 
