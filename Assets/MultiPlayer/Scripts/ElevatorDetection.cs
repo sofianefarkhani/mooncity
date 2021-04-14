@@ -5,8 +5,8 @@ using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
     private const float DefaultTime = 10; 
-    private static float _timeBeforeElevate = DefaultTime;
-    private int _numberOfPersonIn = 0;
+    private static float _timeBeforeElevate;
+    private static int _numberOfPersonIn;
 
     private bool _timerIsRunning = false;
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class ElevatorDetection : MonoBehaviour
         {
             Debug.Log("We are ready to go !");
             _timerIsRunning = false;
-            _timeBeforeElevate = 0;
+            _timeBeforeElevate = DefaultTime;
             SwitchingRoom.SwitchRoom();
 
         }
@@ -37,15 +37,16 @@ public class ElevatorDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        _timeBeforeElevate = DefaultTime;
         if (!_timerIsRunning)
         {
             Debug.Log("First person to enter !");
             _timerIsRunning = true;
             _numberOfPersonIn = 1;
+            
         }
         else
         {
-            _timeBeforeElevate = DefaultTime;
             _numberOfPersonIn++;
             Debug.Log("Another person is in ! Number Person in :"+_numberOfPersonIn);
         }
