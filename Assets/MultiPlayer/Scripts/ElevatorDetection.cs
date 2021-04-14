@@ -5,7 +5,7 @@ using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
     private const float DefaultTime = 10; 
-    private float _timeBeforeElevate = DefaultTime;
+    private static float _timeBeforeElevate = DefaultTime;
     private int _numberOfPersonIn = 0;
 
     private bool _timerIsRunning = false;
