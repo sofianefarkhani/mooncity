@@ -8,7 +8,9 @@ public class ElevatorDetection : MonoBehaviour
     private static float _timeBeforeElevate;
     private static int _numberOfPersonIn;
 
-    private bool _timerIsRunning = false;
+    private bool _timerIsRunning;
+
+    private bool _isFirstTimeToEnter=true;
     // Start is called before the first frame update
     private void Start()
     {
@@ -23,7 +25,6 @@ public class ElevatorDetection : MonoBehaviour
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
             Debug.Log("Timer :"+_timeBeforeElevate);
-            Debug.Log(_timerIsRunning);
         }
         else
         {
@@ -43,12 +44,15 @@ public class ElevatorDetection : MonoBehaviour
             Debug.Log("First person to enter !");
             _timerIsRunning = true;
             _numberOfPersonIn = 1;
-            
+            _isFirstTimeToEnter = false;
         }
         else
         {
+            if (!_isFirstTimeToEnter) return;
             _numberOfPersonIn++;
+            _isFirstTimeToEnter = false;
             Debug.Log("Another person is in ! Number Person in :"+_numberOfPersonIn);
+
         }
         
     }
@@ -57,8 +61,8 @@ public class ElevatorDetection : MonoBehaviour
     {
         if (_numberOfPersonIn <= 0)
         {
-            Debug.Log("There's nobody left inside !");
             _timerIsRunning = false;
+            Debug.Log("There's nobody left inside !");
         }
         else
         {
