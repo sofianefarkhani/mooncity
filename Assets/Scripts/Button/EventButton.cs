@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using Valve.VR.InteractionSystem;
 
 public class EventButton : MonoBehaviour
 {
