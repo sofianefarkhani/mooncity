@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
-    private const float DefaultTime = 10; 
-    private static float _timeBeforeElevate;
-    private static int _numberOfPersonIn;
+    
+    private const float DefaultTime = 10;
+    [SerializeField]
+    private float _timeBeforeElevate;
+    [SerializeField]
+    private int _numberOfPersonIn;
+    [SerializeField]
     private bool _isInOrOut;//True = il est à l'intérieur de l'ascenseur, False = il est à l'extérieur de l'ascenseur(par défaut)
     // Start is called before the first frame update
     private void Start()
