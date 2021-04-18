@@ -28,7 +28,7 @@ public class ElevatorDetection : MonoBehaviour
         {
             Debug.Log("We are ready to go !");
             _timerIsRunning = false;
-            _timeBeforeElevate = 0;
+            _timeBeforeElevate = DefaultTime;
             SwitchingRoom.SwitchRoom();
 
         }

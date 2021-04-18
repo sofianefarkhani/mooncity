@@ -2551,7 +2551,7 @@ PrefabInstance:
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 634508566}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2560,7 +2560,7 @@ PrefabInstance:
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadRoomSousSol, Assembly-CSharp
+      value: SwitchingRoom, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
