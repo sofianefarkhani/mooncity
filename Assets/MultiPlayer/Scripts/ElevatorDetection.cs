@@ -3,10 +3,8 @@ public class ElevatorDetection : MonoBehaviour
 {
     
     private const float DefaultTime = 10;
-    [SerializeField]
-    private float _timeBeforeElevate;
-    [SerializeField]
-    private int _numberOfPersonIn;
+    private static float _timeBeforeElevate;
+    private static int _numberOfPersonIn;
     // Start is called before the first frame update
     private void Start()
     {
