@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
@@ -29,8 +30,7 @@ public class ElevatorDetection : MonoBehaviour
             Debug.Log("We are ready to go !");
             _timerIsRunning = false;
             _timeBeforeElevate = DefaultTime;
-            SwitchingRoom.SwitchRoom();
-
+            GameManager.Instance.gameObject.GetComponent<SwitchingRoom>().SwitchRoom();
         }
     }
 
