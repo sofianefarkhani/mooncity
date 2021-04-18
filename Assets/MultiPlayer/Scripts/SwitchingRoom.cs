@@ -29,7 +29,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// we need to keep track of this to properly adjust the behavior when we receive call back by Photon.
     /// Typically this is used for the OnConnectedToMaster() callback.
     /// </summary>
-    private bool _isConnecting;
+    private static bool _isConnecting;
     
 
     #endregion
@@ -57,7 +57,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// The idea here, it's when you leave a room, you indicate to photon that you still want to connect to a room.
     /// So what when the player get back to the Master Server, it will connecting him to the other room by the room's name.
     /// </summary>
-    public void SwitchRoom()
+    public static void SwitchRoom()
     {
         
         _isConnecting=PhotonNetwork.LeaveRoom();

@@ -36,11 +36,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 
     [Tooltip("The current Health of our player")]
     public float Health = 1f;
+
+    public static bool IsInOrOutOfElevator;
     #endregion
 
 
     #region Private Fields
-
     #endregion
 
     #region MonoBehaviour CallBacks
