@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
-    
-    private const float DefaultTime = 10;
-    private static float _timeBeforeElevate;
-    private static int _numberOfPersonIn;
+    private const float DefaultTime = 10; 
+    private float _timeBeforeElevate = DefaultTime;
+    private int _numberOfPersonIn = 0;
 
-    private List<CharacterController> _characters;
+    private bool _timerIsRunning = false;
     // Start is called before the first frame update
     private void Start()
     {
@@ -18,42 +17,52 @@ public class ElevatorDetection : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        /********** Un simple timer qui se décrémente que s'il y a au moin une personne à l'intérieur de l'ascenseur **********/
-        if(_numberOfPersonIn<=0) return;
-        if (_timeBeforeElevate > 0 )
+        if (!_timerIsRunning || _numberOfPersonIn <= 0) return;
+        if (_timeBeforeElevate > 0)
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
             Debug.Log("Timer :"+_timeBeforeElevate);
+            Debug.Log(_timerIsRunning);
         }
         else
         {
-            /********** Le timer est arriver à zéro donc on TP les personnes qui sont à l'intérieur de l'ascenseur **********/
             Debug.Log("We are ready to go !");
-            _numberOfPersonIn = 0;
-            _timeBeforeElevate = DefaultTime;
-            foreach (var character in _characters)
-            {
-                var component = character.GetComponent(typeof(SwitchingRoom));
-                Debug.Log(component.gameObject);
-            }
+            _timerIsRunning = false;
+            _timeBeforeElevate = 0;
+            SwitchingRoom.SwitchRoom();
 
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!_timerIsRunning)
+        {
+            Debug.Log("First person to enter !");
+            _timerIsRunning = true;
+            _numberOfPersonIn = 1;
+        }
+        else
+        {
+            _timeBeforeElevate = DefaultTime;
+            _numberOfPersonIn++;
+            Debug.Log("Another person is in ! Number Person in :"+_numberOfPersonIn);
+        }
         
-        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        _characters.Add((CharacterController) other);
-        _numberOfPersonIn++;
-        _timeBeforeElevate = DefaultTime;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        _numberOfPersonIn--;
-        _characters.Remove((CharacterController) other);
-
+        if (_numberOfPersonIn <= 0)
+        {
+            Debug.Log("There's nobody left inside !");
+            _timerIsRunning = false;
+        }
+        else
+        {
+            _numberOfPersonIn--;
+            Debug.Log("One person has left the elevator ! Number of person left : "+_numberOfPersonIn);
+        }
+        
     }
 }
