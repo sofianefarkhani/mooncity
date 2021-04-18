@@ -30,7 +30,7 @@ public class ElevatorDetection : MonoBehaviour
             Debug.Log("We are ready to go !");
             _timerIsRunning = false;
             _timeBeforeElevate = DefaultTime;
-            GameManager.Instance.gameObject.GetComponent<SwitchingRoom>().SwitchRoom();
+            PlayerManager.LocalPlayerInstance.GetComponent<SwitchingRoom>().SwitchRoom();
         }
     }
 

@@ -30,7 +30,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// Typically this is used for the OnConnectedToMaster() callback.
     /// </summary>
     private bool _isConnecting;
-
+    
 
     #endregion
     
