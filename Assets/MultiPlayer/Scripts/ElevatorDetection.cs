@@ -1,10 +1,14 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
     
     private const float DefaultTime = 10;
     private static float _timeBeforeElevate;
     private static int _numberOfPersonIn;
+
+    private List<CharacterController> _characters;
     // Start is called before the first frame update
     private void Start()
     {
@@ -27,7 +31,11 @@ public class ElevatorDetection : MonoBehaviour
             Debug.Log("We are ready to go !");
             _numberOfPersonIn = 0;
             _timeBeforeElevate = DefaultTime;
-            SwitchingRoom.SwitchRoom();
+            foreach (var character in _characters)
+            {
+                var component = character.GetComponent(typeof(SwitchingRoom));
+                Debug.Log(component.gameObject);
+            }
 
         }
     }
@@ -36,6 +44,7 @@ public class ElevatorDetection : MonoBehaviour
     {
         
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
+        _characters.Add((CharacterController) other);
         _numberOfPersonIn++;
         _timeBeforeElevate = DefaultTime;
     }
@@ -44,6 +53,7 @@ public class ElevatorDetection : MonoBehaviour
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
         _numberOfPersonIn--;
+        _characters.Remove((CharacterController) other);
 
     }
 }
