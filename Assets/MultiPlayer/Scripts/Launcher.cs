@@ -58,7 +58,7 @@ public class Launcher : MonoBehaviourPunCallbacks
     {
         // #Critical
         // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
-        PhotonNetwork.AutomaticallySyncScene = true;
+        PhotonNetwork.AutomaticallySyncScene = false;
     }
 
 
@@ -146,7 +146,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
 
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
-        if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
+        //if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
         Debug.Log("We load the 'Main' room");
         // #Critical
         // Load the Room Level.
