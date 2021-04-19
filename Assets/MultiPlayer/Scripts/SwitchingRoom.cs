@@ -58,7 +58,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// </summary>
     public static void SwitchRoom()
     {
-        
+        Debug.Log("Trigger by : "+PhotonNetwork.LocalPlayer.NickName);
         _isConnecting=PhotonNetwork.LeaveRoom();
 
     }
