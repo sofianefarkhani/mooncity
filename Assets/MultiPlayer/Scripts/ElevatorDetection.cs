@@ -28,7 +28,8 @@ public class ElevatorDetection : MonoBehaviour
             _timerIsRunning = false;
             _numberOfPersonIn = 0;
             _timeBeforeElevate = DefaultTime;
-            SwitchingRoom.SwitchRoom();
+            PhotonView photonView= PhotonView.Get(this);
+            photonView.RPC("SwitchRoom",RpcTarget.MasterClient);
 
         }
     }
