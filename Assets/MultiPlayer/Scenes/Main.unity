@@ -1364,8 +1364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPlayersPerRoom: 4
-  sceneToLoadNextRoom: {fileID: 102900000, guid: 00ccd22124a45524a8e505bae18deded,
-    type: 3}
+  joiningRoomScene: {fileID: 102900000, guid: 00ccd22124a45524a8e505bae18deded, type: 3}
 --- !u!1 &640640734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7695280020871906411, guid: ecb845d2584f3a6488e2ffccd16a1e9c,
@@ -2551,7 +2550,7 @@ PrefabInstance:
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 634508566}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
