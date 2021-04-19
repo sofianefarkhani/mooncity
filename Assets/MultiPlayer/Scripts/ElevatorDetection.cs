@@ -15,7 +15,7 @@ public class ElevatorDetection : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (!_timerIsRunning || _numberOfPersonIn <= 0) return;
+        if (!_timerIsRunning) return;
         if (_timeBeforeElevate > 0)
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
@@ -36,8 +36,9 @@ public class ElevatorDetection : MonoBehaviour
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
         _timeBeforeElevate = DefaultTime;
+        if(_numberOfPersonIn<=0)_timerIsRunning = true;
         _numberOfPersonIn++;
-        _timerIsRunning = true;
+        
 
 
     }
@@ -46,7 +47,7 @@ public class ElevatorDetection : MonoBehaviour
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
         _numberOfPersonIn--;
-        _timerIsRunning = false;
+        if (_numberOfPersonIn <= 0) _timerIsRunning = false;
 
     }
 }
