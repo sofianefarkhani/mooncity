@@ -60,6 +60,8 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     {
         Debug.Log("Trigger by : "+PhotonNetwork.LocalPlayer.NickName);
         _isConnecting=PhotonNetwork.LeaveRoom();
+        while (PhotonNetwork.InRoom) return;
+        
 
     }
 
@@ -104,7 +106,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
 
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
-        //if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
+        if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
         Debug.Log("We load "+joiningRoomScene.name+" scene for this room");
         // #Critical
         // Load the Room Level.

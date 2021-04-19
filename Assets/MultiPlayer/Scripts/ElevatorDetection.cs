@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Photon.Pun;
+using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
     private const float DefaultTime = 10; 
