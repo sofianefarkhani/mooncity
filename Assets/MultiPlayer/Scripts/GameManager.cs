@@ -74,7 +74,9 @@ public class GameManager : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsMasterClient)
         {
             Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
-            LoadArena();
+
+
+            //LoadArena();
         }
     }
 
@@ -94,7 +96,8 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     #endregion
 /* Not necessary since changing scene is handled by the script SwicthingRoom.cs and loadArena() is already done in onJoinedRoom() 
-    #region Private Methods*/
+    #region Private Methods
+
 
     void LoadArena()
     {
@@ -105,7 +108,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         Debug.LogFormat("PhotonNetwork : Loading Level : {0}", PhotonNetwork.CurrentRoom.PlayerCount);
         PhotonNetwork.LoadLevel("Main");
     }
-/*
+
     [PunRPC]
     public void ChangeScene()
     {
