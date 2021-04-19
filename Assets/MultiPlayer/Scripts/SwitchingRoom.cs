@@ -50,12 +50,13 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
 
     #endregion
 
-    #region Public Methods
+    #region Public PunRPC Methods
 
 
     /// <summary>
     /// Will trigger everything you need to change room in function of the scene asset. It's mean that a scene will have a dedicated room. 
     /// </summary>
+    [PunRPC]
     public static void SwitchRoom()
     {
         Debug.Log("Trigger by : "+PhotonNetwork.LocalPlayer.NickName);
