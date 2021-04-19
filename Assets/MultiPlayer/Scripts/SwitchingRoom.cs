@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using Photon.Realtime;
+using UnityEditor;
 using UnityEngine;
 
 public class SwitchingRoom : MonoBehaviourPunCallbacks
@@ -12,12 +13,11 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]
     [SerializeField]
     private byte maxPlayersPerRoom = 4;
-    [Tooltip("The name of the room to go, can be a new one or an existing one")]
-    [SerializeField]
-    private string nameRoom;
     
-    [Tooltip("The name of the scene to load in the next room.")] [SerializeField]
-    private string nameRoomScene;
+    [Tooltip("The scene to load in the room you want to switch to. The room will be created with the name of the scene !")]
+    [SerializeField]
+    private SceneAsset joiningRoomScene;
+    
     #endregion
     
     #region Private Fields
@@ -54,8 +54,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
 
 
     /// <summary>
-    /// The idea here, it's when you leave a room, you indicate to photon that you still want to connect to a room.
-    /// So what when the player get back to the Master Server, it will connecting him to the other room by the room's name.
+    /// Will trigger everything you need to change room in function of the scene asset. It's mean that a scene will have a dedicated room. 
     /// </summary>
     public static void SwitchRoom()
     {
@@ -80,7 +79,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
         if (_isConnecting)
         {
             // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-            PhotonNetwork.JoinRoom(nameRoom);
+            PhotonNetwork.JoinRoom(joiningRoomScene.name);
             _isConnecting = false;
         }
     }
@@ -97,7 +96,7 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
         // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-        PhotonNetwork.CreateRoom(nameRoom, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
+        PhotonNetwork.CreateRoom(joiningRoomScene.name, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
     }
 
     public override void OnJoinedRoom()
@@ -105,17 +104,13 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
         Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
 
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
-        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
-        {
-            Debug.Log("We load the "+nameRoom+" room");
+        if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
+        Debug.Log("We load "+joiningRoomScene.name+" scene for this room");
+        // #Critical
+        // Load the Room Level.
+        PhotonNetwork.LoadLevel(joiningRoomScene.name);
 
 
-            // #Critical
-            // Load the Room Level.
-            PhotonNetwork.LoadLevel(nameRoomScene);
-        }
-            
-            
     }
     
 

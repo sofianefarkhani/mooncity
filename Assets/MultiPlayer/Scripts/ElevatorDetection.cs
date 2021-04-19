@@ -1,13 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Photon.Pun;
-using UnityEngine;
+﻿using UnityEngine;
 public class ElevatorDetection : MonoBehaviour
 {
     private const float DefaultTime = 10; 
-    private float _timeBeforeElevate = DefaultTime;
-    private int _numberOfPersonIn = 0;
-    private bool _timerIsRunning = false;
+    private static float _timeBeforeElevate = DefaultTime;
+    private static int _numberOfPersonIn;
+    [SerializeField]
+    private bool _timerIsRunning;
     // Start is called before the first frame update
     private void Start()
     {
@@ -17,12 +15,11 @@ public class ElevatorDetection : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (_numberOfPersonIn <= 0) return;
+        if (!_timerIsRunning || _numberOfPersonIn <= 0) return;
         if (_timeBeforeElevate > 0)
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
             Debug.Log("Timer :"+_timeBeforeElevate);
-            Debug.Log(_timerIsRunning);
         }
         else
         {
@@ -30,8 +27,8 @@ public class ElevatorDetection : MonoBehaviour
             _timerIsRunning = false;
             _numberOfPersonIn = 0;
             _timeBeforeElevate = DefaultTime;
-            if(PlayerManager.IsInOrOutOfElevator) SwitchingRoom.SwitchRoom();
-            
+            SwitchingRoom.SwitchRoom();
+
         }
     }
 
@@ -40,8 +37,8 @@ public class ElevatorDetection : MonoBehaviour
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
         _timeBeforeElevate = DefaultTime;
         _numberOfPersonIn++;
-        PlayerManager.IsInOrOutOfElevator = true;
-        
+        _timerIsRunning = true;
+
 
     }
 
@@ -49,7 +46,7 @@ public class ElevatorDetection : MonoBehaviour
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
         _numberOfPersonIn--;
-        PlayerManager.IsInOrOutOfElevator = false;
+        _timerIsRunning = false;
 
     }
 }

@@ -1339,12 +1339,33 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 634508563}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 634508565}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9c3643b2d6f14342bcf5246758295c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &634508565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1162779164503003990, guid: a78ccea25d522634a836d2fc8dc94046,
+    type: 3}
+  m_PrefabInstance: {fileID: 634508563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &634508566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634508565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a068b185620448743973aab6fb1de364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxPlayersPerRoom: 4
+  sceneToLoadNextRoom: {fileID: 102900000, guid: 00ccd22124a45524a8e505bae18deded,
+    type: 3}
 --- !u!1 &640640734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7695280020871906411, guid: ecb845d2584f3a6488e2ffccd16a1e9c,
@@ -2530,8 +2551,7 @@ PrefabInstance:
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7708514810924676303, guid: ef5849d217ab02440871a5fc5ae2f088,
-        type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 2298650169512369816, guid: ef892e510514bf541a0646e18a8d10bd,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -7237,6 +7257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19398ccb3f07c664eb50e931ee45ff66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timerIsRunning: 0
 --- !u!1 &905792092318754970
 GameObject:
   m_ObjectHideFlags: 0

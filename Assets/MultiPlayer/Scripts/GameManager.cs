@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Photon.Pun;
-using Photon.Pun.UtilityScripts;
 using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
@@ -31,7 +30,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
                 // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                PhotonNetwork.Instantiate(this.playerPrefab.name, spawn.transform.position, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(playerPrefab.name, spawn.transform.position, Quaternion.identity, 0);
             }
             else
             {
@@ -96,7 +95,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
 
     #endregion
-
+/* Not necessary since changing scene is handled by the script SwicthingRoom.cs and loadArena() is already done in onJoinedRoom() 
     #region Private Methods
 
 
@@ -125,5 +124,5 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
 
-    #endregion
+    #endregion*/
 }
