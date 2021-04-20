@@ -32,7 +32,7 @@ public class VRController : MonoBehaviourPun
     private Transform head = null;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundDistance =0;
     public static bool isGrounded = false;
     public static bool isSolid = false;
     public LayerMask groundMask;
