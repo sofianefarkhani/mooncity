@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class rocketlaunch : MonoBehaviour
+public class rocketlaunch : MonoBehaviourPun
 {
     public float dist;
     public ParticleSystem ps1;
     public ParticleSystem ps2;
     public Light l;
     public float speedMax=6000;
-    public bool triggerLaunch=false;
+    public bool triggerLaunch;
     private const float Gamma = 0.4f;
     private float _speed = 0;
     private Vector3 _defaultPos;
@@ -45,6 +46,7 @@ public class rocketlaunch : MonoBehaviour
                 ps2.Stop();
                 l.intensity = 0;
                 Destroy(gameObject);
+                
                 
             }
         }
