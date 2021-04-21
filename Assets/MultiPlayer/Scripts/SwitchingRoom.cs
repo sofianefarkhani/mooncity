@@ -58,10 +58,8 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// </summary>
     public static void SwitchRoom()
     {
-        Debug.Log("Trigger by : "+PhotonNetwork.LocalPlayer.NickName);
-        _isConnecting=PhotonNetwork.LeaveRoom();
-        while (PhotonNetwork.InRoom) return;
-        
+        if (GameManager.Instance.playerPrefab.GetPhotonView().IsMine) _isConnecting = PhotonNetwork.LeaveRoom();
+
 
     }
 
