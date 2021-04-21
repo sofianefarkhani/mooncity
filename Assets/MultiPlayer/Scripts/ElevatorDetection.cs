@@ -4,14 +4,15 @@ using Photon.Pun;
 using UnityEngine;
 public class ElevatorDetection : MonoBehaviourPun
 {
-    private const float DefaultTime = 10; 
-    private static float _timeBeforeElevate = DefaultTime;
+    [SerializeField]
+    private float defaultTime = 10; 
+    private static float _timeBeforeElevate;
     [SerializeField]
     private List<int> playersIn;
     // Start is called before the first frame update
     private void Start()
     {
-        
+        _timeBeforeElevate = defaultTime;
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class ElevatorDetection : MonoBehaviourPun
         else
         {
             Debug.Log("We are ready to go !");
-            _timeBeforeElevate = DefaultTime;
+            _timeBeforeElevate = defaultTime;
             foreach (var player in playersIn.Where(player => PhotonNetwork.LocalPlayer.ActorNumber.Equals(player)))
             {
                 SwitchingRoom.SwitchRoom(false);
@@ -39,7 +40,7 @@ public class ElevatorDetection : MonoBehaviourPun
     private void OnTriggerEnter(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerEnter est trigger uniquement par le Collider lié au CharacterController
-        _timeBeforeElevate = DefaultTime; 
+        _timeBeforeElevate = defaultTime; 
         if (other.gameObject.GetPhotonView().IsMine) playersIn.Add(other.gameObject.GetPhotonView().Owner.ActorNumber);
 
 
