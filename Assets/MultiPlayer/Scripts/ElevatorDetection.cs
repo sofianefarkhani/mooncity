@@ -29,7 +29,7 @@ public class ElevatorDetection : MonoBehaviourPun
             _timeBeforeElevate = DefaultTime;
             foreach (var player in playersIn.Where(player => PhotonNetwork.LocalPlayer.ActorNumber.Equals(player)))
             {
-                SwitchingRoom.SwitchRoom();
+                SwitchingRoom.SwitchRoom(false);
             }
             playersIn.Clear();
 

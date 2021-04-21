@@ -56,10 +56,18 @@ public class SwitchingRoom : MonoBehaviourPunCallbacks
     /// <summary>
     /// Will trigger everything you need to change room in function of the scene asset. It's mean that a scene will have a dedicated room. 
     /// </summary>
-    public static void SwitchRoom()
+    public static void SwitchRoom(bool verifyPhotonView=true)
     {
-        if (GameManager.Instance.playerPrefab.GetPhotonView().IsMine) _isConnecting = PhotonNetwork.LeaveRoom();
-
+        if (verifyPhotonView)
+        {
+            if (GameManager.Instance.playerPrefab.GetPhotonView().IsMine) _isConnecting = PhotonNetwork.LeaveRoom();
+        }
+        else
+        {
+            _isConnecting = PhotonNetwork.LeaveRoom();
+        }
+            
+        
 
     }
 
