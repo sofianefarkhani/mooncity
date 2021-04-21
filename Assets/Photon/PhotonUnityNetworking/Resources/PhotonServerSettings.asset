@@ -49,6 +49,7 @@ MonoBehaviour:
   - ChangeScene
   - ChangeSceneSousScene
   - SwitchRoom
+  - CallToSwitchRoom
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

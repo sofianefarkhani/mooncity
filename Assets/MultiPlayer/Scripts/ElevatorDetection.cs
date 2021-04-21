@@ -1,6 +1,7 @@
 ﻿using Photon.Pun;
+using Photon.Pun.UtilityScripts;
 using UnityEngine;
-public class ElevatorDetection : MonoBehaviour
+public class ElevatorDetection : MonoBehaviourPun
 {
     private const float DefaultTime = 10; 
     private static float _timeBeforeElevate = DefaultTime;
@@ -16,7 +17,7 @@ public class ElevatorDetection : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (!_timerIsRunning) return;
+        if (!_timerIsRunning ) return;
         if (_timeBeforeElevate > 0)
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
@@ -28,8 +29,8 @@ public class ElevatorDetection : MonoBehaviour
             _timerIsRunning = false;
             _numberOfPersonIn = 0;
             _timeBeforeElevate = DefaultTime;
-            PhotonView photonView= PhotonView.Get(this);
-            photonView.RPC("CallToSwitchRoom",RpcTarget.MasterClient);
+            SwitchingRoom.SwitchRoom();
+            
 
         }
     }
@@ -37,25 +38,16 @@ public class ElevatorDetection : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        _timeBeforeElevate = DefaultTime;
-        if(_numberOfPersonIn<=0)_timerIsRunning = true;
-        _numberOfPersonIn++;
+        if(other.gameObject.GetPhotonView().IsMine)Debug.Log(PhotonNetwork.LocalPlayer.NickName+"entered the elevator");
         
-
 
     }
 
     private void OnTriggerExit(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        _numberOfPersonIn--;
-        if (_numberOfPersonIn <= 0) _timerIsRunning = false;
+        if(PlayerManager.LocalPlayerInstance.gameObject.Equals(other.gameObject)) Debug.Log(PlayerManager.LocalPlayerInstance.name+"exited the elevator");
 
     }
-
-    [PunRPC]
-    public void CallToSwitchRoom()
-    {
-        SwitchingRoom.SwitchRoom();
-    } 
+    
 }
