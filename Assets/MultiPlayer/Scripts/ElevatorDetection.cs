@@ -8,9 +8,8 @@ public class ElevatorDetection : MonoBehaviourPun
 {
     private const float DefaultTime = 10; 
     private static float _timeBeforeElevate = DefaultTime;
-    private List<int> playersIn;
     [SerializeField]
-    private bool _timerIsRunning;
+    private List<int> playersIn;
     // Start is called before the first frame update
     private void Start()
     {
@@ -20,7 +19,7 @@ public class ElevatorDetection : MonoBehaviourPun
     // Update is called once per frame
     private void Update()
     {
-        if (!_timerIsRunning ) return;
+        if (playersIn.Count==0) return;
         if (_timeBeforeElevate > 0)
         {
             _timeBeforeElevate -= Time.smoothDeltaTime;
@@ -29,12 +28,12 @@ public class ElevatorDetection : MonoBehaviourPun
         else
         {
             Debug.Log("We are ready to go !");
-            _timerIsRunning = false;
             _timeBeforeElevate = DefaultTime;
             foreach (var player in playersIn.Where(player => PhotonNetwork.LocalPlayer.ActorNumber.Equals(player)))
             {
                 SwitchingRoom.SwitchRoom();
             }
+            playersIn.Clear();
             
 
         }
