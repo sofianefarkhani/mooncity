@@ -1,11 +1,14 @@
-﻿using Photon.Pun;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Photon.Pun;
 using Photon.Pun.UtilityScripts;
 using UnityEngine;
 public class ElevatorDetection : MonoBehaviourPun
 {
     private const float DefaultTime = 10; 
     private static float _timeBeforeElevate = DefaultTime;
-    private static int _numberOfPersonIn;
+    private List<int> playersIn;
     [SerializeField]
     private bool _timerIsRunning;
     // Start is called before the first frame update
@@ -27,9 +30,11 @@ public class ElevatorDetection : MonoBehaviourPun
         {
             Debug.Log("We are ready to go !");
             _timerIsRunning = false;
-            _numberOfPersonIn = 0;
             _timeBeforeElevate = DefaultTime;
-            SwitchingRoom.SwitchRoom();
+            foreach (var player in playersIn.Where(player => PhotonNetwork.LocalPlayer.ActorNumber.Equals(player)))
+            {
+                SwitchingRoom.SwitchRoom();
+            }
             
 
         }
@@ -38,11 +43,8 @@ public class ElevatorDetection : MonoBehaviourPun
     private void OnTriggerEnter(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerEnter est trigger uniquement par le Collider lié au CharacterController
-        if (other.gameObject.GetPhotonView().IsMine)
-        {
-            Debug.Log(PhotonNetwork.LocalPlayer.NickName+" entered the elevator");
-            Debug.Log(other.gameObject.GetPhotonView().Owner.NickName+" just get in"); 
-        }
+        if (other.gameObject.GetPhotonView().IsMine) playersIn.Add(other.gameObject.GetPhotonView().Owner.ActorNumber);
+
         
 
     }
@@ -50,12 +52,8 @@ public class ElevatorDetection : MonoBehaviourPun
     private void OnTriggerExit(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerExit est trigger uniquement par le Collider lié au CharacterController
-        if (PlayerManager.LocalPlayerInstance.gameObject.Equals(other.gameObject))
-        {
-            Debug.Log(PlayerManager.LocalPlayerInstance.name+" exited the elevator");
-            Debug.Log(other.gameObject.GetPhotonView().Owner.NickName+" get in"); 
-            
-        }
+        if (other.gameObject.GetPhotonView().IsMine)
+            playersIn.Remove(other.gameObject.GetPhotonView().Owner.ActorNumber);
 
     }
     
