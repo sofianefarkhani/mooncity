@@ -42,9 +42,10 @@ public class ElevatorDetection : MonoBehaviourPun
     private void OnTriggerEnter(Collider other)
     {
         if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerEnter est trigger uniquement par le Collider lié au CharacterController
+        _timeBeforeElevate = DefaultTime;
         if (!other.gameObject.GetPhotonView().IsMine) return;
         playersIn.Add(other.gameObject.GetPhotonView().Owner.ActorNumber);
-        _timeBeforeElevate = DefaultTime;
+        
 
     }
 
