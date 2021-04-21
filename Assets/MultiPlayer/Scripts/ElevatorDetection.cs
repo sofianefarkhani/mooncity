@@ -37,16 +37,25 @@ public class ElevatorDetection : MonoBehaviourPun
     
     private void OnTriggerEnter(Collider other)
     {
-        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        if(other.gameObject.GetPhotonView().IsMine)Debug.Log(PhotonNetwork.LocalPlayer.NickName+"entered the elevator");
+        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerEnter est trigger uniquement par le Collider lié au CharacterController
+        if (other.gameObject.GetPhotonView().IsMine)
+        {
+            Debug.Log(PhotonNetwork.LocalPlayer.NickName+" entered the elevator");
+            Debug.Log(other.gameObject.GetPhotonView().Owner.NickName+" just get in"); 
+        }
         
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;
-        if(PlayerManager.LocalPlayerInstance.gameObject.Equals(other.gameObject)) Debug.Log(PlayerManager.LocalPlayerInstance.name+"exited the elevator");
+        if(!other.GetType().IsEquivalentTo(typeof(CharacterController))) return;//On s'assure que OnTriggerExit est trigger uniquement par le Collider lié au CharacterController
+        if (PlayerManager.LocalPlayerInstance.gameObject.Equals(other.gameObject))
+        {
+            Debug.Log(PlayerManager.LocalPlayerInstance.name+" exited the elevator");
+            Debug.Log(other.gameObject.GetPhotonView().Owner.NickName+" get in"); 
+            
+        }
 
     }
     
