@@ -1288,22 +1288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxPlayersPerRoom: 4
   joiningRoomScene: {fileID: 102900000, guid: 00ccd22124a45524a8e505bae18deded, type: 3}
---- !u!114 &634508567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634508565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8701526de72d8774fa165e66daf050ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listFoldIsOpen: 1
-  teamsList:
-  - Name: Elevator
-    Code: 1
 --- !u!1 &640640734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7695280020871906411, guid: ecb845d2584f3a6488e2ffccd16a1e9c,
