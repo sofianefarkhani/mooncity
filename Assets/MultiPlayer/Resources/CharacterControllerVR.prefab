@@ -1661,7 +1661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237a20d87516b6948adedc8430053936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DefaultHeight: 3.6
   rotationWhenCrouched: 100
   Head: {fileID: 1026778356096804113}
   CameraRig: {fileID: 6337802649687969060}
