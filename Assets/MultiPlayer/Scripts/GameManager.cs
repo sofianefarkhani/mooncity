@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
+﻿using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
@@ -15,7 +10,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     [Tooltip("The prefab to use for representing the player")]
     public GameObject playerPrefab;
-
+    [Tooltip("The prefab to indicate the location of the spawn point")]
     public GameObject spawn;
 
     #endregion
@@ -35,7 +30,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
                 // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                PhotonNetwork.Instantiate(this.playerPrefab.name, spawn.transform.position, Quaternion.identity, 0);
+                PhotonNetwork.Instantiate(playerPrefab.name, spawn.transform.position, Quaternion.identity, 0);
             }
             else
             {
@@ -53,7 +48,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnLeftRoom()
     {
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0)
     }
 
     public override void OnPlayerEnteredRoom(Player other)
@@ -66,7 +61,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             Debug.LogFormat("OnPlayerEnteredRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-            LoadArena();
+            //LoadArena();
         }
     }
 
@@ -81,7 +76,7 @@ public class GameManager : MonoBehaviourPunCallbacks
             Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-            LoadArena();
+            //LoadArena();
         }
     }
 
@@ -100,7 +95,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
 
     #endregion
-
+/* Not necessary since changing scene is handled by the script SwicthingRoom.cs and loadArena() is already done in onJoinedRoom() 
     #region Private Methods
 
 
@@ -120,6 +115,14 @@ public class GameManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LoadLevel("Main");
     }
 
+    [PunRPC]
+    public void ChangeSceneSousScene()
+    {
+        
+        Debug.Log("Loading TestSousSol Scene's");
+        PhotonNetwork.LoadLevel("TestSousSol");
+    }
 
-    #endregion
+
+    #endregion*/
 }

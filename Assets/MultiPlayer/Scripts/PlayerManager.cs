@@ -1,9 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-using UnityEngine;
-using UnityEngine.EventSystems;
-
+﻿using UnityEngine;
 using Photon.Pun;
 
 /// <summary>
@@ -45,7 +40,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 
 
     #region Private Fields
-
     #endregion
 
     #region MonoBehaviour CallBacks

@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using Photon.Pun;
+﻿using Photon.Pun;
 using Photon.Realtime;
 using UnityEditor;
+using UnityEngine;
 
-public class Launcher : MonoBehaviourPunCallbacks
+public class SwitchingRoom : MonoBehaviourPunCallbacks
 {
     #region Private Serializable Fields
 
@@ -13,94 +13,62 @@ public class Launcher : MonoBehaviourPunCallbacks
     [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]
     [SerializeField]
     private byte maxPlayersPerRoom = 4;
-
-    [Tooltip("The Ui Panel to let the user enter name, connect and play")]
-    [SerializeField]
-    private GameObject controlPanel;
-
-    [Tooltip("The UI Label to inform the user that the connection is in progress")]
-    [SerializeField]
-    private GameObject progressLabel;
     
-    [Tooltip("The asset of the scene to load when connecting to the room. The room will have the same name of the scene one's")]
+    [Tooltip("The scene to load in the room you want to switch to. The room will be created with the name of the scene !")]
     [SerializeField]
     private SceneAsset joiningRoomScene;
-
+    
     #endregion
-
-
+    
     #region Private Fields
 
-
-    /// <summary>
-    /// This client's version number. Users are separated from each other by gameVersion (which allows you to make breaking changes).
-    /// </summary>
-    private const string GameVersion = "1";
-
+    
+    
     /// <summary>
     /// Keep track of the current process. Since connection is asynchronous and is based on several callbacks from Photon,
     /// we need to keep track of this to properly adjust the behavior when we receive call back by Photon.
     /// Typically this is used for the OnConnectedToMaster() callback.
     /// </summary>
-    private bool _isConnecting;
+    private static bool _isConnecting;
     
 
     #endregion
-
-
+    
     #region MonoBehaviour CallBacks
-
-
-    /// <summary>
-    /// MonoBehaviour method called on GameObject by Unity during early initialization phase.
-    /// </summary>
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        // #Critical
-        // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
-        PhotonNetwork.AutomaticallySyncScene = true;
+        
     }
 
-
-    /// <summary>
-    /// MonoBehaviour method called on GameObject by Unity during initialization phase.
-    /// </summary>
-    private void Start()
+    // Update is called once per frame
+    void Update()
     {
-        progressLabel.SetActive(false);
-        controlPanel.SetActive(true);
+        
     }
-
+    
 
     #endregion
-
 
     #region Public Methods
 
 
     /// <summary>
-    /// Start the connection process.
-    /// - If already connected, we attempt joining a random room
-    /// - if not yet connected, Connect this application instance to Photon Cloud Network
+    /// Will trigger everything you need to change room in function of the scene asset. It's mean that a scene will have a dedicated room. 
     /// </summary>
-    public void Connect()
+    public static void SwitchRoom(bool verifyPhotonView=true)
     {
-
-        progressLabel.SetActive(true);
-        controlPanel.SetActive(false);
-
-        // we check if we are connected or not, we join if we are , else we initiate the connection to the server.
-        if (PhotonNetwork.IsConnected)
+        if (verifyPhotonView)
         {
-            // #Critical we need at this point to attempt joining a Random Room. If it fails, we'll get notified in OnJoinRandomFailed() and we'll create one.
-            PhotonNetwork.JoinRoom(joiningRoomScene.name);
+            if (GameManager.Instance.playerPrefab.GetPhotonView().IsMine) _isConnecting = PhotonNetwork.LeaveRoom();
         }
         else
         {
-            // keep track of the will to join a room, because when we come back from the game we will get a callback that we are connected, so we need to know what to do then
-            _isConnecting = PhotonNetwork.ConnectUsingSettings();
-            PhotonNetwork.GameVersion = GameVersion;
+            _isConnecting = PhotonNetwork.LeaveRoom();
         }
+            
+        
+
     }
 
 
@@ -127,10 +95,8 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnDisconnected(DisconnectCause cause)
     {
         _isConnecting = false;
-        progressLabel.SetActive(false);
-        controlPanel.SetActive(true);
-
-        Debug.LogWarningFormat("PUN 1 Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
+        
+        Debug.LogWarningFormat("PUN Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
     }
 
     public override void OnJoinRoomFailed(short returnCode, string message)
@@ -147,17 +113,15 @@ public class Launcher : MonoBehaviourPunCallbacks
 
         // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
         if (PhotonNetwork.CurrentRoom.PlayerCount != 1) return;
-        Debug.Log("We load the 'Main' room");
+        Debug.Log("We load "+joiningRoomScene.name+" scene for this room");
         // #Critical
         // Load the Room Level.
         PhotonNetwork.LoadLevel(joiningRoomScene.name);
 
 
     }
-
+    
 
     #endregion
-
-
 
 }
