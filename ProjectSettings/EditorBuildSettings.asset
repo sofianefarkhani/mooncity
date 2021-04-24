@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MultiPlayer/Scenes/Main.unity
     guid: e628b75a0ac00c5448e62c0f7a5ae315
-  - enabled: 1
-    path: Assets/MultiPlayer/Scenes/SousSol.unity
-    guid: ce653ccedd979134382dd653047dde54
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
