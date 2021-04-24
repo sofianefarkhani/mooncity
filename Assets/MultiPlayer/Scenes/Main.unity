@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 909344822}
-  m_IndirectSpecularColor: {r: 0.0015087021, g: 0.0036466247, b: 0.0015087021, a: 1}
+  m_IndirectSpecularColor: {r: 0.0014283519, g: 0.0036210604, b: 0.0014283519, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2833,6 +2833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb9f05f1348b2d47b54f6bb2345b166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotating: 0
+  trigonometricRotation: 0
 --- !u!1001 &890887972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6720,7 +6722,7 @@ PrefabInstance:
     - target: {fileID: 6648394644074690954, guid: c36c29c86e40b4f41b49a293079a5ecf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 96.66
+      value: 96.44
       objectReference: {fileID: 0}
     - target: {fileID: 6648394644074690954, guid: c36c29c86e40b4f41b49a293079a5ecf,
         type: 3}
@@ -6730,7 +6732,7 @@ PrefabInstance:
     - target: {fileID: 6648394644074690954, guid: c36c29c86e40b4f41b49a293079a5ecf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 128.099
+      value: 127.89
       objectReference: {fileID: 0}
     - target: {fileID: 6648394644074690954, guid: c36c29c86e40b4f41b49a293079a5ecf,
         type: 3}
@@ -16503,7 +16505,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!1 &5785793180280002717
