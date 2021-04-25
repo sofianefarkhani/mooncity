@@ -26,11 +26,11 @@ public class tournerObservatoire : MonoBehaviour
         {
             if (trigonometricRotation)
             {
-                top.transform.Rotate(0, this.rotationSpeed, 0);
+                top.transform.Rotate(0, 0, this.rotationSpeed);
             }
             else
             {
-                top.transform.Rotate(0, -this.rotationSpeed, 0);
+                top.transform.Rotate(0, 0, -this.rotationSpeed);
             }
         }
 
