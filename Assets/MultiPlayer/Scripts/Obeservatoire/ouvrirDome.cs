@@ -34,8 +34,8 @@ public class ouvrirDome : MonoBehaviour
 
         speedMultiplier = 1f;
 
-        this.maxOpeningValue = 157;
-        this.minOpeningValue = 153.3f;
+        this.maxOpeningValue = 25.6f;
+        this.minOpeningValue = 22.48f;
 
         //the position of the center of rotation
         center = partieRotative.transform.position;
