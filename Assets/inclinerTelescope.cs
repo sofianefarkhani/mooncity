@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class inclinerTelescope : MonoBehaviour
 {
-    GameObject upperPart;
-    bool pointUpwards;
-    bool pointDownwards;
+    public bool pointUpwards;
+    public bool pointDownwards;
 
     float higherInclination;
     float lowerInclination;
     float midPoint;
+    GameObject upperPart;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +19,8 @@ public class inclinerTelescope : MonoBehaviour
         pointDownwards = false;
         pointUpwards = false;
 
-        higherInclination = 335;
-        lowerInclination = 50;
+        higherInclination = 60;
+        lowerInclination = 300;
         midPoint = 180;
     }
 
@@ -29,26 +29,19 @@ public class inclinerTelescope : MonoBehaviour
     {
         float angle = upperPart.transform.rotation.eulerAngles.x;
 
+        
+
         float speed = 10f;
         float absoluteAngleBonus = Time.deltaTime * speed;
 
-        //butées limitant le mouvement du telescope
-        if (angle > midPoint && angle < higherInclination)
-        {
-            pointUpwards = false;
-            pointDownwards = true;
-        }
-        if (angle < midPoint && angle > lowerInclination)
-        {
-            pointUpwards = true;
-            pointDownwards = false;
-        }
 
-
+        
         //mouvement
-        if (pointUpwards)
+        if (pointUpwards)//&& angle-absoluteAngleBonus>this.higherInclination
         {
             upperPart.transform.Rotate(-absoluteAngleBonus, 0, 0);
+            
+            
         }
         else if (pointDownwards)
         {

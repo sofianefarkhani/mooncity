@@ -15,6 +15,9 @@ public class tounerTelescope : MonoBehaviour
     void Start()
     {
         telescope = this.gameObject;
+
+        print(telescope);
+
         rotating = false;
         trigonometricRotation = true;
         rotationSpeed = 10f;
@@ -23,17 +26,19 @@ public class tounerTelescope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float angle = telescope.transform.rotation.eulerAngles.y;
-        float absoluteAngleBonus = Time.deltaTime * rotationSpeed;
+        if (rotating)
+        {
+            float absoluteAngleBonus = Time.deltaTime * rotationSpeed;
 
 
-        if (trigonometricRotation)
-        {
-            telescope.transform.Rotate(0, -absoluteAngleBonus, 0);
-        }
-        else
-        {
-            telescope.transform.Rotate(0, absoluteAngleBonus, 0);
+            if (trigonometricRotation)
+            {
+                telescope.transform.Rotate(0, 0, -absoluteAngleBonus);
+            }
+            else
+            {
+                telescope.transform.Rotate(0, 0, absoluteAngleBonus);
+            }
         }
     }
 

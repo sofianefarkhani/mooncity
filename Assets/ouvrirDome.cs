@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ouvrirDome : MonoBehaviour
 { 
-    bool domeOpens;
-    bool domeCloses;
+    public bool domeOpens;
+    public bool domeCloses;
     bool domeIsOpened;
     bool domeIsClosed;
 
@@ -34,8 +34,8 @@ public class ouvrirDome : MonoBehaviour
 
         speedMultiplier = 1f;
 
-        this.maxOpeningValue = 5;
-        this.minOpeningValue = 0.1f;
+        this.maxOpeningValue = 157;
+        this.minOpeningValue = 153.3f;
 
         //the position of the center of rotation
         center = partieRotative.transform.position;
@@ -64,33 +64,35 @@ public class ouvrirDome : MonoBehaviour
             float newAbsoluteX = magnitudeBonus * Mathf.Cos(rotationAngle * Mathf.PI / 180);
             float newAbsoluteZ = magnitudeBonus * Mathf.Sin(rotationAngle * Mathf.PI / 180);
 
+            print(normL);
 
-
-            if (domeOpens)
+            if (domeCloses)
             {
                 domeIsClosed = false;
-                if (normL < this.maxOpeningValue)
+                if (normL > this.minOpeningValue)
                 {
                     domeGauche.transform.position += new Vector3(newAbsoluteX, 0, -newAbsoluteZ);
                     domeDroit.transform.position += new Vector3(-newAbsoluteX, 0, newAbsoluteZ);
                 }
                 else
                 {
-                    domeIsOpened = true;
+                    domeIsClosed = true;
+                    domeCloses = false;
                 }
             }
 
-            if (domeCloses)
+            if (domeOpens)
             {
                 domeIsOpened = false;
-                if (normL > minOpeningValue)
+                if (normL < maxOpeningValue)
                 {
                     domeGauche.transform.position += new Vector3(-newAbsoluteX, 0, newAbsoluteZ);
                     domeDroit.transform.position += new Vector3(newAbsoluteX, 0, -newAbsoluteZ);
                 }
                 else
                 {
-                    domeIsClosed = true;
+                    domeIsOpened = true;
+                    domeOpens = false;
                 }
             }
         }
