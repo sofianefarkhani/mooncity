@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPlayersPerRoom: 4
-  joiningRoomScene: {fileID: 102900000, guid: 00ccd22124a45524a8e505bae18deded, type: 3}
+  joiningRoomScene: {fileID: 102900000, guid: 710a5067a28ee0046ac5796e7ca762d1, type: 3}
 --- !u!1001 &676382650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40532,7 +40532,7 @@ Transform:
   m_Children:
   - {fileID: 6156947538355634038}
   m_Father: {fileID: 1358135913}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 19.919}
 --- !u!4 &5006512736594606747
 Transform:
