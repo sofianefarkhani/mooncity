@@ -64,7 +64,6 @@ public class ouvrirDome : MonoBehaviour
             float newAbsoluteX = magnitudeBonus * Mathf.Cos(rotationAngle * Mathf.PI / 180);
             float newAbsoluteZ = magnitudeBonus * Mathf.Sin(rotationAngle * Mathf.PI / 180);
 
-            print(normL);
 
             if (domeCloses)
             {
