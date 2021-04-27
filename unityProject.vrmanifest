@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.mainversion.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\moonc\\Desktop\\mooncity\\mooncity\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\moonc\\Documents\\mooncity\\mooncity\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "MainVersion [Testing]"
